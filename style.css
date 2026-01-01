@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  font-weight: 500;
+  line-height: 1.6;
+  background: url(./Image/img.jpeg) no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* .converter-box {
+  width: 100%;
+  max-width: 120rem;
+  margin: 2rem auto 0;
+} */
+
+.converter-box {
+  max-width: 120rem;
+  margin: 2rem auto;
+  padding: 0 2rem; /* THIS replaces the fake spacing */
+}
+
+.converter-box h1 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 3.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-solid {
+  padding-left: 1rem;
+}
+
+.result {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  margin: 0 auto 1.5rem;
+  font-weight: bold;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 80%;
+  max-width: 30rem;
+}
+
+.currency--form {
+  text-align: left;
+  margin: 2rem 6.4rem 2rem 6.4rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: last baseline;
+  margin-bottom: 2.6rem;
+}
+
+.form-group label {
+  font-size: 1.8rem;
+  display: block;
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: left;
+}
+
+.form-group input,
+.form-group select {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0.8rem;
+  border: 1px solid #ced4da;
+  border-radius: 16px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  width: 100%;
+  max-width: 25rem;
+  box-sizing: border-box;
+  outline: 2px solid #7124e5;
+}
+
+.convert-btn {
+  width: 50%;
+  max-width: 10rem;
+  padding: 0.8rem;
+  background-color: #7124e5;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block;
+}
+
+.convert-btn:hover {
+  background-color: #fff;
+  color: #7124e5;
+}
+
+@media (max-width: 48rem) {
+  .converter-box {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .converter-box h1 {
+    font-size: 2.4rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .result {
+    width: 90%;
+    max-width: none;
+    font-size: 1.4rem;
+    padding: 0.8rem;
+  }
+
+  .currency--form {
+    margin: 1rem;
+  }
+
+  .form-group input,
+  .form-group select {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+
+  .convert-btn {
+    width: 100%;
+    max-width: none;
+    font-size: 1.1rem;
+    padding: 1rem 0;
+  }
+}

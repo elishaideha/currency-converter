@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./script.js"></script>
+    <title>Exchange</title>
+  </head>
+  <body>
+    <div class="converter-box">
+      <h1>
+        Currency Converter
+        <i class="fa-solid fa-money-bill-transfer"></i>
+      </h1>
+      <div class="result">1 USD is equal to 0.85 EUR</div>
+
+      <form id="currency-form" class="currency--form">
+        <div class="form-group">
+          <label for="amount">Amount</label>
+          <input
+            type="number"
+            id="amount"
+            name="amount"
+            placeholder="Enter amount"
+            min="0"
+            step="0.01"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="from-currency">From</label>
+          <select id="from-currency" name="from-currency" required>
+            <option value="">Select currency</option>
+            <option value="USD">USD - US Dollar</option>
+            <option value="EUR">EUR - Euro</option>
+            <option value="GBP">GBP - British Pound</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="to-currency">To</label>
+          <select id="to-currency" name="to-currency" required>
+            <option value="">Select currency</option>
+            <option value="USD">USD - US Dollar</option>
+            <option value="EUR">EUR - Euro</option>
+            <option value="GBP">GBP - British Pound</option>
+          </select>
+        </div>
+        <button type="submit" class="convert-btn">Convert</button>
+      </form>
+    </div>
+  </body>
+</html>
